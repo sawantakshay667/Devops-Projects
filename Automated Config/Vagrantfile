@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.provision "shell", inline: <<-END
+  sudo apt upgrade -y 
+  sudo apt update -y
+  sudo apt install apache2 -y
+  curl -v localhost:80
+  sudo shutdown -h 0
+  END
+  
+end
