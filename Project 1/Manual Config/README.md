@@ -1,5 +1,7 @@
  open your terminal, Create a new directory
-''' mkdir webserver '''
+''' 
+mkdir webserver 
+'''
 
  Now use the vagrant init command to initialise a new vagrant machine.
 # vagrant init ubuntu/jammy64
