@@ -13,7 +13,7 @@ vagrant init ubuntu/jammy64
 vagrant up
 ```
 
-# *Explore the VM*
+# *Explore the VM
 ### Let’s go inside the VM with this command , This gives you an SSH terminal session inside the Ubuntu VM.
 ```
 vagrant ssh
