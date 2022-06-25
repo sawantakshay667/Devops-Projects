@@ -13,13 +13,13 @@ vagrant init ubuntu/jammy64
 vagrant up
 ```
 
-# *Explore the VM
+# *Explore the VM*
 ### Let’s go inside the VM with this command , This gives you an SSH terminal session inside the Ubuntu VM.
 ```
 vagrant ssh
 ```
 
-# Install the web server
+# *Install the web server*
  ### Install Apache in the Ubuntu VM
 ```
 apt list --installed
@@ -51,7 +51,7 @@ systemctl status apache2
 curl -v localhost:80
 ```
 
-# Set up networking
+# *Set up networking*
 ### We can access the web server from inside the VM. But we want to access the website in a proper web browser. How do we access it from outside the VM (from our desktop)? We’ll need to understand a little about networking, which we’ll do next.
 
 ### How to see your VM’s network configuration
@@ -59,7 +59,7 @@ curl -v localhost:80
 ip a
 ```
 
-# Stop the ubuntu VM, enable adapter 2 >> Network >> Bridged Adapter > Select your network adapter >> start the VM.
+## *Stop the ubuntu VM, enable adapter 2 >> Network >> Bridged Adapter > Select your network adapter >> start the VM.*
 ### Run the below cmd. In My Case, My adapter logical name is "enp0s8", 
 ```
 ip a
@@ -90,9 +90,9 @@ sudo ip route add default via "gateway-IP"
 ip route show
 ```
 
-# Now you can access the webserver using VM-ip:80
+# *Now you can access the webserver using VM-ip:80*
 
 ### Add some website content
 ### default file location is /var/www/html, Edit the index.html page
 
-# Now, you can access website using "vm-enp0s8-ip:80"
+# *Now, you can access website using "vm-enp0s8-ip:80"*
